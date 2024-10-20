@@ -1,0 +1,9 @@
+CONFIG_TARGET_sifiveu=y
+CONFIG_TARGET_sifiveu_generic=y
+CONFIG_TARGET_sifiveu_generic_DEVICE_sifive_unleashed=y
+CONFIG_PACKAGE_kmod-eeprom-at24=y
+CONFIG_PACKAGE_kmod-hwmon-core=y
+CONFIG_PACKAGE_kmod-hwmon-lm90=y
+CONFIG_PACKAGE_kmod-i2c-core=y
+CONFIG_PACKAGE_kmod-regmap-core=y
+CONFIG_PACKAGE_kmod-regmap-i2c=y

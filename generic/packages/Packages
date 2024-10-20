@@ -1,0 +1,420 @@
+Package: base-files
+Version: 1606~90b6728de2
+Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
+License: GPL-2.0
+Section: base
+URL: http://openwrt.org/
+Architecture: riscv64_riscv64
+Installed-Size: 256000
+Filename: base-files_1606~90b6728de2_riscv64_riscv64.ipk
+Size: 49354
+SHA256sum: 07d71bb1d03d4df8680a3c3e372c2373f1871c0dbb8640d889e4512600c1b32f
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: dropbear
+Version: 2024.85-r1
+Depends: libc
+Alternatives: 100:/usr/bin/ssh-keygen:/usr/sbin/dropbear, 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
+License: MIT
+Section: net
+URL: https://matt.ucc.asn.au/dropbear/
+CPE-ID: cpe:/a:dropbear_ssh_project:dropbear_ssh
+Architecture: riscv64_riscv64
+Installed-Size: 215040
+Filename: dropbear_2024.85-r1_riscv64_riscv64.ipk
+Size: 110532
+SHA256sum: 950921acfd362ba725583c5c669c34386dba04aa03a38d722cb71b550284657e
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: fstools
+Version: 2024.01.22~08cd7083-r1
+Depends: libc, ubox
+License: GPL-2.0
+Section: base
+Architecture: riscv64_riscv64
+Installed-Size: 61440
+Filename: fstools_2024.01.22~08cd7083-r1_riscv64_riscv64.ipk
+Size: 20545
+SHA256sum: 23f2b61c6928690439d74fb0257c75a2ae77021368dca6f6d21fb17f4fbd6505
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 2019.11.12~8f7fe925-r1
+Depends: libc
+License: GPL-2.0
+Section: utils
+Architecture: riscv64_riscv64
+Installed-Size: 20480
+Filename: fwtool_2019.11.12~8f7fe925-r1_riscv64_riscv64.ipk
+Size: 5100
+SHA256sum: f20db7df44c68cbebfae7334e1d28b90bd8d1663eebdddb4af9e1718df8a7c40
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: kmod-crypto-crc32c
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-crypto-hash
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 10240
+Filename: kmod-crypto-crc32c_6.6.35-r1_riscv64_riscv64.ipk
+Size: 989
+SHA256sum: 1e8edb7849e5120f2f72d628f1d98886724ae09a6809dd760dc9321210bc7242
+Description:  CRC32c CRC module
+
+Package: kmod-crypto-hash
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 10240
+Filename: kmod-crypto-hash_6.6.35-r1_riscv64_riscv64.ipk
+Size: 990
+SHA256sum: 59c237c5977893259e6784325378610ebd1560bedc05867adf46a93411a0c950
+Description:  CryptoAPI hash support
+
+Package: kmod-eeprom-at24
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-i2c-core, kmod-regmap-i2c
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 40960
+Filename: kmod-eeprom-at24_6.6.35-r1_riscv64_riscv64.ipk
+Size: 7850
+SHA256sum: b08007b53c5c4afccd1f2ebac90eff23f09d622c4803ade85078bf0329faa815
+Description:  Kernel module for most I2C EEPROMs
+
+Package: kmod-hwmon-core
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 40960
+Filename: kmod-hwmon-core_6.6.35-r1_riscv64_riscv64.ipk
+Size: 10543
+SHA256sum: 6738f856ce53d45ae704c7be84f83fd8103f97f7abf4f538c3530952bc9d451d
+Description:  Kernel modules for hardware monitoring
+
+Package: kmod-hwmon-lm90
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-hwmon-core, kmod-i2c-core
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 102400
+Filename: kmod-hwmon-lm90_6.6.35-r1_riscv64_riscv64.ipk
+Size: 23751
+SHA256sum: c61f1a485883027a2c964edf0dea813c1f7c59e8fba2b503bd7c9694d9c3032c
+Description:  Kernel module for LM90 thermal monitor chip
+
+Package: kmod-i2c-core
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 40960
+Filename: kmod-i2c-core_6.6.35-r1_riscv64_riscv64.ipk
+Size: 8284
+SHA256sum: 83835bf7a794ce97cc03914587cca1f2e468176887e66ded03d9f2fa82a7c149
+Description:  Kernel modules for I2C support
+
+Package: kmod-lib-crc-ccitt
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 20480
+Filename: kmod-lib-crc-ccitt_6.6.35-r1_riscv64_riscv64.ipk
+Size: 3052
+SHA256sum: 8a3c796b2f29465c5e8bdbf421d69683d21f399271837bca20825dbf1f52265a
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-lib-crc32c
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-crypto-crc32c
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 20480
+Filename: kmod-lib-crc32c_6.6.35-r1_riscv64_riscv64.ipk
+Size: 2244
+SHA256sum: 0924c1d351af2786f08711a17a03a507b607e6d93925ff57caa392f1af52946f
+Description:  Kernel module for CRC32 support
+
+Package: kmod-nf-conntrack6
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-nf-conntrack
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 10240
+Filename: kmod-nf-conntrack6_6.6.35-r1_riscv64_riscv64.ipk
+Size: 851
+SHA256sum: 6b2c3830825a9e867dc3b1b0ec0185b7d7d2d3c6ac7c1ed551d875cadfbd2c37
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 276480
+Filename: kmod-nf-conntrack_6.6.35-r1_riscv64_riscv64.ipk
+Size: 75881
+SHA256sum: cb9a10be97731b52c104bb8b905f992812d5675168ec1d9195c8e2955759ee52
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-nf-conntrack
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 81920
+Filename: kmod-nf-flow_6.6.35-r1_riscv64_riscv64.ipk
+Size: 24432
+SHA256sum: 0eda1874ec7c6042e76d5a7ddc4e5d1326f3676c7618436aac7a8fcd1f491bc0
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-log6
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-nf-log
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 10240
+Filename: kmod-nf-log6_6.6.35-r1_riscv64_riscv64.ipk
+Size: 847
+SHA256sum: 59ac0bbf0b179798230d76af9a311e31cbe60a3b6b474968fd6d52848fb3766d
+Description:  Netfilter IPV6 Logging
+
+Package: kmod-nf-log
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 61440
+Filename: kmod-nf-log_6.6.35-r1_riscv64_riscv64.ipk
+Size: 14052
+SHA256sum: f7e25e7ae4725d00259866c39ac047c6695f8668f3bbd66a2b109476a0686f14
+Description:  Netfilter Logging
+
+Package: kmod-nf-nat
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-nf-conntrack
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 81920
+Filename: kmod-nf-nat_6.6.35-r1_riscv64_riscv64.ipk
+Size: 22717
+SHA256sum: badcaf6001bc5270a3972b704b166e52cc0d4e70c66bcd471bdd06f478710e5e
+Description:  Netfilter NAT
+
+Package: kmod-nf-reject6
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 20480
+Filename: kmod-nf-reject6_6.6.35-r1_riscv64_riscv64.ipk
+Size: 5704
+SHA256sum: 6a8552abb1f948f3809c152afe9822679073a3a53dfea443dfd05f8730889d44
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 20480
+Filename: kmod-nf-reject_6.6.35-r1_riscv64_riscv64.ipk
+Size: 5426
+SHA256sum: 063031f53ae25aa8f85addcaea91723386a610be448c653383c84fd2696411ad
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nfnetlink
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 30720
+Filename: kmod-nfnetlink_6.6.35-r1_riscv64_riscv64.ipk
+Size: 7821
+SHA256sum: 92df6cee396af51102e03b4b1ead00a7996ce5dc72dbc05d2131757aab2aba8f
+Description:  Kernel modules support for a netlink-based userspace interface
+
+Package: kmod-nft-core
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-nfnetlink, kmod-nf-reject, kmod-nf-reject6, kmod-nf-conntrack6, kmod-nf-nat, kmod-nf-log, kmod-nf-log6, kmod-lib-crc32c
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 747520
+Filename: kmod-nft-core_6.6.35-r1_riscv64_riscv64.ipk
+Size: 208657
+SHA256sum: 5e1af8dbd13529249c5b4083c43ed7973b8045f3b6cec244c88c78742eac439c
+Description:  Kernel module support for nftables
+
+Package: kmod-nft-fib
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-nft-core
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 51200
+Filename: kmod-nft-fib_6.6.35-r1_riscv64_riscv64.ipk
+Size: 9089
+SHA256sum: 05b2aeb09f660f647ea0a8414bb4ba309fae0b27d9512670b9c2c3eac4f553ac
+Description:  Netfilter nf_tables fib support
+
+Package: kmod-nft-nat
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-nft-core, kmod-nf-nat
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 40960
+Filename: kmod-nft-nat_6.6.35-r1_riscv64_riscv64.ipk
+Size: 7294
+SHA256sum: 9bd49686fa1b05af4a67b7ddd311700ba4db7fe3bbb0bab402eb3d0de1c562ae
+Description:  Netfilter nf_tables NAT support
+
+Package: kmod-nft-offload
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-nf-flow, kmod-nft-nat
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 30720
+Filename: kmod-nft-offload_6.6.35-r1_riscv64_riscv64.ipk
+Size: 7089
+SHA256sum: bbb9bdb9ce72a795965aaf03c630f3b169d6e701f7b7ee73b40e7b3393c451d7
+Description:  Netfilter nf_tables routing/NAT offload support
+
+Package: kmod-ppp
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-lib-crc-ccitt, kmod-slhc
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 143360
+Filename: kmod-ppp_6.6.35-r1_riscv64_riscv64.ipk
+Size: 41561
+SHA256sum: 36947e657fd24533bfea3fb5a02f1cff2a64e45f7dfd9106a15148f66e8b668a
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-ppp, kmod-pppox
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 51200
+Filename: kmod-pppoe_6.6.35-r1_riscv64_riscv64.ipk
+Size: 11963
+SHA256sum: fcbc610f39bce17e2309b532d664da60d31d3ce286506289eb028506c6b8dc5c
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-ppp
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 20480
+Filename: kmod-pppox_6.6.35-r1_riscv64_riscv64.ipk
+Size: 3085
+SHA256sum: 2a56842fa1bdd16915d7a5e4a8149ce754c247f445d1be25b5bbb6cf6f684bc1
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-regmap-core
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1)
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 10240
+Filename: kmod-regmap-core_6.6.35-r1_riscv64_riscv64.ipk
+Size: 846
+SHA256sum: 542d5c7b4c11186d9b6cb5c04f08543a12180cdf31fe6f91064d4dbd06e8d0fa
+Description:  Generic register map support
+
+Package: kmod-regmap-i2c
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-regmap-core, kmod-i2c-core
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 20480
+Filename: kmod-regmap-i2c_6.6.35-r1_riscv64_riscv64.ipk
+Size: 4029
+SHA256sum: d576c0329f902c49cc80842aa7c43b973f780fff270085706876438a7c24c7c8
+Description:  I2C register map support
+
+Package: kmod-slhc
+Version: 6.6.35-r1
+Depends: kernel (=6.6.35~63025a9dd16370c66d37c6fa9a070cdb-r1), kmod-lib-crc-ccitt
+License: GPL-2.0-only
+Section: kernel
+Architecture: riscv64_riscv64
+Installed-Size: 20480
+Filename: kmod-slhc_6.6.35-r1_riscv64_riscv64.ipk
+Size: 6614
+SHA256sum: c776e94470ed2a8c386077b87071598813239c1adf48c8de77074134c920c25b
+Description:  Serial Line Header Compression
+
+Package: libgcc1
+Version: 13.3.0-r4
+Provides: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+URL: http://gcc.gnu.org/
+ABIVersion: 1
+Status: unknown hold not-installed
+Essential: yes
+Architecture: riscv64_riscv64
+Installed-Size: 102400
+Filename: libgcc1_13.3.0-r4_riscv64_riscv64.ipk
+Size: 49791
+SHA256sum: d3bf835c72f24e943ff199700d669a7ef778805f3b9bfdcf4e145af7f57d1588
+Description:  GCC support library
+
+Package: libpthread
+Version: 1.2.5-r4
+Depends: libgcc1
+License: GPL-3.0-with-GCC-exception
+Section: libs
+URL: http://www.musl-libc.org/
+Status: unknown hold not-installed
+Essential: yes
+Architecture: riscv64_riscv64
+Installed-Size: 10240
+Filename: libpthread_1.2.5-r4_riscv64_riscv64.ipk
+Size: 912
+SHA256sum: 72da5b8b318fc034e10e79c735a57113f3de134d8f8900df4f398fa690dd0a06
+Description:  POSIX thread library
+
+Package: mtd
+Version: 26
+Depends: libc, libubox20240329
+License: GPL-2.0+
+Section: utils
+Architecture: riscv64_riscv64
+Installed-Size: 30720
+Filename: mtd_26_riscv64_riscv64.ipk
+Size: 11462
+SHA256sum: f57571686f9e0c0f21423d6e30f1725b831b901c7cf888dcfbf3f5cee1811f34
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
